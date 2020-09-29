@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -156,7 +157,6 @@ main {
 .titulo {
   font-family: 'Major Mono Display', monospace;  
   text-align: center;
-  position: fixed;
 }
 .cont {
   font-family: 'Open Sans', sans-serif;
@@ -174,10 +174,7 @@ main {
     height: 70vh;
   }
 
-  .posts{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+  
   .logo {
     display: none;
   }
@@ -206,7 +203,10 @@ main {
     height: 5rem;
     overflow: hidden;
   }
-  
+  .posts{
+    margin-top: -20rem;
+  }
+
   .logo {
     display: none;
   }
@@ -373,17 +373,17 @@ header {
   padding: 0rem;
   position: relative;
 }
-.titulo {
-  position: fixed;
-  overflow: hidden;
-  z-index: 3;
+
+.banner{
+  margin-top: -90vh;
+  z-index: 4;
+  align-items: center;
   font-size: 2.5rem;
   text-align: center;
-  height: 80vh;
   color: var(--text-title);
-  
+  box-shadow: 1px 1px 0px 1px var(--text-primary);
+ 
 }
-
 .slider {
   width: 17em;
   height: 17em;
@@ -411,43 +411,57 @@ button.slick-next {
   position: absolute;
 }
 
-.tooltip {
-  background: var(--bg-secondary);
-  color: var(--text-primary);
-  border-radius: 14px;
+.card {
+  position: relative;
   width: 280px;
-  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 4px 4px var(--bg-secondary);
   cursor: pointer;
-  margin-top: 0.6rem;
-  clip-path: circle(100%);
-
-  
-}
-.tooltip h1{
-font-weight: lighter;
-font-family: 'Girassol', cursive;
-
-}
-.tooltip:hover {
-  clip-path: circle(33% at 50% 33%);
-
-}
-
-.tooltip:hover span {
-  opacity: 0;
-}
-
-.icon {
   align-items: center;
-  float: center;
-  font-weight: bold;
-  margin-right: 0%;
-  transition: opacity 0.3s;}
+  margin-top: 1rem;
+  
+
+}
+
+.text {
+  margin: 20px auto;
+}
+
+.card:after,
+.card:before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:before {
+  border-left: 1.5px solid #6649b8;
+  border-right: 1.5px solid #6649b8;
+  transform: scaleY(0);
+}
+
+.card:after {
+  border-bottom: 1.5px solid #6649b8;
+  border-top: 1.5px solid #6649b8;
+  transform: scaleX(0);
+}
+
+.card:hover:before {
+  transform: scaleY(1);
+}
+
+.card:hover:after {
+  transform: scaleX(1);
+}
 
 .posts{
-  margin-top: -38rem;
+  margin-top: -90vh;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
+  height: 100vh;
 }
