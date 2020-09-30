@@ -278,7 +278,7 @@ main {
   --bg-wave1: #3e3e41;
   --bg-wave2: #f4e4b8;
   --bg-wave3: #e4e4e4;
-  --text-title: #8163d3;
+  --text-title: #b09de2;
 
 }
 
@@ -604,8 +604,12 @@ mark{
 
   .text-pages{
     margin: 50px 50px;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 .card-pages{
-padding: 5rem;}
+  width: 100vw;
+}
+.card{
+width: 100vw;
+}
 }
