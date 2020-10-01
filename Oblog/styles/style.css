@@ -290,8 +290,7 @@ main {
   --bg-wave1: #e4e4e4;
   --bg-wave2: #3e3e41;
   --bg-wave3: #f4e4b8;
-  --text-title: #576e75;
-
+  --text-title: #f5f5f5;
 }
 
 .theme-icon {
@@ -426,7 +425,7 @@ button.slick-next {
   align-items: center;
   margin-top: 1rem;
   z-index: 0;
-  
+  text-decoration: none;
 }
 .creditos{
   font-size: 1vh;
@@ -487,6 +486,7 @@ button.slick-next {
 a {
   text-decoration: none;
   color: var(--text-secondary);
+
 }
 mark{
   background-color: var(--text-title);
@@ -604,12 +604,12 @@ mark{
 
   .text-pages{
     margin: 50px 50px;
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 .card-pages{
   width: 100vw;
 }
 .card{
-width: 100vw;
+  width: 100vw;
 }
 }
