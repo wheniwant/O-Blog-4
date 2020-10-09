@@ -480,7 +480,7 @@ button.slick-next {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 122vh;
+  height: 150vh;
 
 }
 a {
@@ -497,7 +497,6 @@ mark{
 .card-pages{
   position: relative;
   width: 95vw;
-  box-shadow: 1px 1px 1px 1px var(--bg-secondary);
   cursor: pointer;
   align-items: center;
   margin-top: 1.2rem;
@@ -532,14 +531,14 @@ mark{
 }
 
 .card-pages:before {
-  border-left: 1px solid var(--text-title);
-  border-right: 1px solid var(--text-title);
+  border-left: 0px solid var(--text-title);
+  border-right: 0px solid var(--text-title);
   transform: scaleY(0);
 }
 
 .card-pages:after {
-  border-bottom: 1px solid var(--text-title);
-  border-top: 1px solid var(--text-title);
+  border-bottom: 0px solid var(--text-title);
+  border-top: 0px solid var(--text-title);
   transform: scaleX(0);
 }
 
@@ -557,7 +556,7 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 330vh;
+  height: 400vh;
 }
 
 .posts-pages-2{
@@ -566,7 +565,7 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 230vh;
+  height: 290vh;
 }
 .posts-pages-3{
   margin-top: -90vh;
@@ -574,7 +573,7 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 230vh;
+  height: 290vh;
 }
 .posts-pages-4{
   margin-top: -90vh;
@@ -582,7 +581,7 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 210vh;
+  height: 250vh;
 }
 .posts-pages-5{
   margin-top: -90vh;
@@ -590,7 +589,7 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 170vh;
+  height: 190vh;
 }
 .posts-pages-6{
   margin-top: -90vh;
@@ -598,12 +597,37 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 90vh;
+  height: 150vh;
+}
+.posts-pages-7{
+  margin-top: -90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 340vh;
+}
+.text-pages-7{
+  margin: 10px 10px;
+  font-family:  'Open Sans', sans-serif;
+  text-align: center;
+  text-decoration: underline var(--text-title);
+  text-justify: distribute;
+  font-weight: bold;
+  font-size: 2vh;
+}
+.posts-pages-8{
+  margin-top: -90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 230vh;
 }
 @media only screen and (min-width: 600px) {
 
   .text-pages{
-    margin: 50px 50px;
+    margin: 100px 100px;
     padding-left: 2rem;
 }
 .card-pages{
