@@ -480,8 +480,13 @@ button.slick-next {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 280vh;
+  height: 200vh;
 
+}
+@media only screen and (max-width: 320px){
+  .posts{
+    height: 280vh;
+  }
 }
 a {
   text-decoration: none;
