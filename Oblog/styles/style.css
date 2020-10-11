@@ -649,12 +649,12 @@ mark{
   color: var(--text-primary);
 }
 textarea{
-  overflow: auto;
+  overflow: hidden;
   resize: none;
   outline:none;
   height:3vh;
   background-color: var(--text-title);
-  width: 30vw;
+  width: 120px;
   font-family:  'Open Sans', sans-serif;
   font-size: 2vh;
   font-weight: bold;
