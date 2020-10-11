@@ -650,6 +650,7 @@ textarea{
   resize: none;
   outline:none;
   height:3vh;
+  background-color: var(--text-title);
   width: 30vw;
   font-family:  'Open Sans', sans-serif;
   font-size: 2vh;
