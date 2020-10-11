@@ -409,7 +409,6 @@ button.slick-next {
 }
 .titulo-home{
   font-family: 'Girassol', cursive;
-  font-weight: 100;
   position: fixed;
   z-index: 0;
   font-size: 2.3rem;
@@ -480,12 +479,11 @@ button.slick-next {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 200vh;
-
+  height: 160vh;
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 370px){
   .posts{
-    height: 280vh;
+    height: 200vh;
   }
 }
 a {
@@ -502,7 +500,6 @@ mark{
 .card-pages{
   position: relative;
   width: 95vw;
-  cursor: pointer;
   align-items: center;
   margin-top: 1.2rem;
   z-index: 0;
@@ -524,36 +521,7 @@ mark{
   font-family: 'Girassol', cursive;
 
 }
-.card-pages:after,
-.card-pages:before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: transform 0.3s ease-in-out;
-}
 
-.card-pages:before {
-  border-left: 0px solid var(--text-title);
-  border-right: 0px solid var(--text-title);
-  transform: scaleY(0);
-}
-
-.card-pages:after {
-  border-bottom: 0px solid var(--text-title);
-  border-top: 0px solid var(--text-title);
-  transform: scaleX(0);
-}
-
-.card-pages:hover:before {
-  transform: scaleY(1);
-}
-
-.card-pages:hover:after {
-  transform: scaleX(1);
-}
 
 .posts-pages-1{
   margin-top: -90vh;
@@ -561,16 +529,25 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 400vh;
+  height: 390vh;
 }
-
+@media only screen and (max-width: 370px){
+  .posts-pages-1{
+    height: 420vh;
+  }
+}
 .posts-pages-2{
   margin-top: -90vh;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 290vh;
+  height: 280vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-2{
+    height: 310vh;
+  }
 }
 .posts-pages-3{
   margin-top: -90vh;
@@ -578,7 +555,12 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 290vh;
+  height: 280vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-3{
+    height: 310vh;
+  }
 }
 .posts-pages-4{
   margin-top: -90vh;
@@ -586,7 +568,12 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 250vh;
+  height: 260vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-4{
+    height: 290vh;
+  }
 }
 .posts-pages-5{
   margin-top: -90vh;
@@ -594,7 +581,12 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 190vh;
+  height: 220vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-5{
+    height: 250vh;
+  }
 }
 .posts-pages-6{
   margin-top: -90vh;
@@ -602,15 +594,21 @@ mark{
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 150vh;
+  height: 90vh;
 }
+
 .posts-pages-7{
   margin-top: -90vh;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  height: 360vh;
+  height: 330vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-7{
+    height: 380vh;
+  }
 }
 .text-pages-7{
   margin: 10px 10px;
@@ -628,6 +626,35 @@ mark{
   text-align: center;
   flex-direction: column;
   height: 230vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-8{
+    height: 260vh;
+  }
+}
+.posts-pages-9{
+  margin-top: -90vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  height: 230vh;
+}
+@media only screen and (max-width: 370px){
+  .posts-pages-9{
+    height: 265vh;
+  }
+}
+textarea{
+  background-color: var(--text-title);
+  height:3vh;
+  width: 42vw;
+  font-family:  'Open Sans', sans-serif;
+  font-size: 2vh;
+  font-weight: bold;
+  border: 2px var(--bg-secondary);
+  border-radius: 2px;
+  z-index: 2;
 }
 @media only screen and (min-width: 600px) {
 
