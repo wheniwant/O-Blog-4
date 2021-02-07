@@ -267,6 +267,9 @@ main {
   --bg-wave2: #c4c4c4;
   --bg-wave3: #131318;
   --text-title: #fffafa;
+  --text-mark: #131318d0;
+  --text-title-mark: #fffafa;
+
 
 }
 
@@ -279,6 +282,10 @@ main {
   --bg-wave2: #f4e4b8;
   --bg-wave3: #e4e4e4;
   --text-title: #b09de2;
+  --text-mark: #e4e4e4;
+  --text-title-mark: #ab8aff;
+
+
 
 }
 
@@ -291,6 +298,9 @@ main {
   --bg-wave2: #3e3e41;
   --bg-wave3: #f4e4b8;
   --text-title: #f5f5f5;
+  --text-mark: #46656ebb;
+  --text-title-mark: #f5f5f5;
+
 }
 
 .theme-icon {
@@ -493,6 +503,12 @@ a {
 }
 mark{
   background-color: var(--text-title);
+  
+}
+.resposta{
+  background-color: var(--text-mark);
+  color: var(--text-title-mark);
+
 }
 /* posts PAG */ 
 
@@ -510,7 +526,6 @@ mark{
   margin: 10px 10px;
   font-family:  'Open Sans', sans-serif;
   text-align: justify;
-  text-decoration: underline var(--text-title);
   text-justify: distribute;
   font-weight: bold;
   font-size: 2vh;
